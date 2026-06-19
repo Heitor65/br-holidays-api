@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional
-import DayMouth
+from DayMouth import day_month
 
 class feriado(BaseModel):
     name : str
-    date : DayMouth
+    date : day_month
     description : str
