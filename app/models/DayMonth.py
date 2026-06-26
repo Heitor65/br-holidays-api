@@ -1,6 +1,5 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
-@dataclass
-class DayMonth:
+class DayMonth(BaseModel):
     day : int
     month : int
