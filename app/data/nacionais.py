@@ -10,6 +10,7 @@ Feriados_nacionais = [
     Feriado(name='Finados', date=DayMonth(day=2, month=11), description='Dia dedicado à lembrança e homenagem aos falecidos.').model_dump(),
     Feriado(name='Proclamação da República', date=DayMonth(day=15, month=11), description='Marca a transição do Brasil de monarquia para república, em 1889.').model_dump(),
     Feriado(name='Dia da Consciência Negra', date=DayMonth(day=20, month=11), description='Homenageia Zumbi dos Palmares e reforça a luta contra o racismo e pela valorização da cultura negra.').model_dump(),
-    Feriado(name='Natal', date=DayMonth(day=25, month=12), description='Celebra o nascimento de Jesus Cristo e é uma das datas mais importantes do cristianismo.').model_dump()
+    Feriado(name='Natal', date=DayMonth(day=25, month=12), description='Celebra o nascimento de Jesus Cristo e é uma das datas mais importantes do cristianismo.').model_dump(),
+    #Sexta-feira Santa
 ]
 
