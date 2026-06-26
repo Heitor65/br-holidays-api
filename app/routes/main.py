@@ -1,6 +1,6 @@
 from flask import jsonify, request, Blueprint
 from pydantic import ValidationError
-from app.db_mock.choices_feriados import feriados_nacionais
+from app.data.nacionais import feriados_nacionais
 
 main_bp = Blueprint('main_bp', __name__)
 
