@@ -1,7 +1,7 @@
 from app.models.Feriados import Feriado
 from app.models.DayMonth import DayMonth
 
-Feriados_nacionais = [
+feriados_nacionais = [
     Feriado(name='Confraternização Universal (Ano Novo)', date=DayMonth(day = 1, month =1), description="Marca o início do ano novo. É um dia simbólico de renovação, celebração e união entre as pessoas.").model_dump(),
     Feriado(name='Tiradentes', date=DayMonth(day=21, month=4), description='Homenageia Joaquim José da Silva Xavier (Tiradentes), líder da Inconfidência Mineira e símbolo da luta pela independência do Brasil.').model_dump(),
     Feriado(name='Dia do Trabalho', date=DayMonth(day=1, month=5), description='Celebra as conquistas dos trabalhadores e os direitos trabalhistas.').model_dump(),
