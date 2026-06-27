@@ -1,7 +1,6 @@
 # 📅 API de Feriados Brasileiros
 
-Este projeto é uma API REST simples para consulta de feriados nacionais e estaduais do Brasil.  
-A ideia é centralizar informações de datas comemorativas e feriados em um formato fácil de consumir por aplicações web, mobile ou scripts.
+API REST que retorna exclusivamente feriados com respaldo jurídico nacional e estadual para setor privado e público, diferenciando feriados fixos, móveis baseados na Páscoa e datas específicas por UF.
 
 ---
 
