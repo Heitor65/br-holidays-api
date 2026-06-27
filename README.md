@@ -47,12 +47,12 @@ Retorna todos os feriados nacionais cadastrados.
 
 ```json
 [
-  {
-    "name": "Confraternização Universal",
+   {
     "date": {
-      "day": 1,
-      "month": 1
+      "day": 23,
+      "month": 4
     },
-    "description": "Celebra o início do ano novo."
+    "description": "Homenageia o Santo Guerreiro, símbolo de resistência e fé, celebrado pelo sincretismo com Ogum",
+    "name": "Dia de São Jorge"
   }
 ]
