@@ -3,14 +3,12 @@
 Este projeto é uma API REST simples para consulta de feriados nacionais e estaduais do Brasil.  
 A ideia é centralizar informações de datas comemorativas e feriados em um formato fácil de consumir por aplicações web, mobile ou scripts.
 
-> ⚠️ Projeto ainda em desenvolvimento.
-
 ---
 
 ## 🚀 Funcionalidades
 
 - Listar feriados nacionais
-- (Em desenvolvimento) Suporte a feriados estaduais
+- Suporte a feriados estaduais
 - Retornar nome, data e descrição de cada feriado
 - Estrutura preparada para expansão de novas datas comemorativas
 
@@ -24,7 +22,6 @@ Este projeto foi criado com fins de estudo e prática de:
 - Estruturação de projetos backend
 - Organização de dados com modelos
 - Boas práticas de código
-- Evolução para um serviço mais completo no futuro (banco de dados, autenticação etc.)
 
 ---
 
@@ -56,3 +53,21 @@ Retorna todos os feriados nacionais cadastrados.
     "name": "Dia de São Jorge"
   }
 ]
+```
+
+### GET `/feriados/estaduais/<uf>`
+
+Retorna todos os feriados estaduais/distritais cadastrados.
+
+``` JSON
+[
+  {
+    "date": {
+      "day": 9,
+      "month": 7
+    },
+    "description": "Celebra a Data Magna do estado, que homenageia o início do levante armado de 1932 contra o governo de Getúlio Vargas.",
+    "name": "Revolução Constitucionalista de 1932"
+  }
+]
+```
