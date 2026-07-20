@@ -58,3 +58,14 @@ def get_feriados_nacionais():
     """
     ano = request.args.get('ano', type=int, default=datetime.now().year)
     return jsonify(feriados_nacionais + get_sexta_santa(ano)), 200
+
+@main_bp.route('/health', methods=['GET'])
+def health_check():
+    """
+    Endpoint de verificação de saúde da API.
+    ---
+    responses:
+      200:
+        description: API está funcionando corretamente
+    """
+    return jsonify({"status": "API está funcionando corretamente"}), 200
