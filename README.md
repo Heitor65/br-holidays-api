@@ -35,7 +35,7 @@ Este projeto foi criado com fins de estudo e prática de:
 
 ## 📡 Endpoints
 
-### GET `/feriados/nacionais`
+### GET `nacional`
 
 Retorna todos os feriados nacionais cadastrados.
 
@@ -54,7 +54,7 @@ Retorna todos os feriados nacionais cadastrados.
 ]
 ```
 
-### GET `/feriados/estaduais/<uf>`
+### GET `estaduais/<uf>`
 
 Retorna todos os feriados estaduais/distritais cadastrados.
 
