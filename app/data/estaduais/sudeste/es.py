@@ -1,4 +1,4 @@
-from app.models.Feriados import Feriado
+from app.models.Feriados import Feriados
 from app.models.DayMonth import DayMonth
 from app.utils.moveis import get_feriados_moveis
 

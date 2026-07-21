@@ -1,8 +1,8 @@
-from app.models.Feriados import Feriado
+from app.models.Feriados import Feriados
 from app.models.DayMonth import DayMonth
 
 feriados_am = [
-    Feriado(
+    Feriados(
         name="Elevação do Amazonas à Categoria de Província",
         date=DayMonth(day=5, month=9),
         description="Instituído como Data Magna do estado pela Lei Promulgada nº 231/2015, celebra o dia em que o Amazonas " \
