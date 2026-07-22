@@ -19,8 +19,6 @@ Este projeto foi criado com fins de estudo e prática de:
 
 - Desenvolvimento de APIs REST com Python
 - Estruturação de projetos backend
-- Organização de dados com modelos
-- Boas práticas de código
 
 ---
 
@@ -28,14 +26,13 @@ Este projeto foi criado com fins de estudo e prática de:
 
 - Python
 - Flask
-- Pydantic (validação de dados)
-- JSON (formato de resposta)
+- Pydantic
 
 ---
 
 ## 📡 Endpoints
 
-### GET `nacional`
+### GET `nacionais/<id>`
 
 Retorna todos os feriados nacionais cadastrados.
 
@@ -54,7 +51,7 @@ Retorna todos os feriados nacionais cadastrados.
 ]
 ```
 
-### GET `estaduais/<uf>`
+### GET `estaduais/<uf>/<id>`
 
 Retorna todos os feriados estaduais/distritais cadastrados.
 
