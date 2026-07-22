@@ -11,11 +11,24 @@ def test_nacional_retorna_lista(client):
 def test_nacional_estrutura_do_feriado(client):
     response = client.get('/nacional')
     feriado = response.get_json()[0]
+    assert 'id' in feriado
     assert 'name' in feriado
     assert 'date' in feriado
     assert 'description' in feriado
     assert 'day' in feriado['date']
     assert 'month' in feriado['date']
+
+def test_nacional_id_fixado(client):
+    response = client.get('/nacional')
+    data = response.get_json()
+    natal = next(item for item in data if item['name'] == 'Natal')
+    assert natal['id'] == 9
+
+def test_movel_id_fixado(client):
+    response = client.get('/nacional?ano=2025')
+    data = response.get_json()
+    sexta_santa = next(item for item in data if item['name'] == 'Sexta-feira Santa')
+    assert sexta_santa['id'] == 10
 
 def test_estadual_uf_valida(client):
     response = client.get('/estaduais/AL')
@@ -24,6 +37,11 @@ def test_estadual_uf_valida(client):
 def test_estadual_uf_invalida(client):
     response = client.get('/estaduais/XX')
     assert response.status_code == 404
+
+def test_estadual_id_fixado(client):
+    response = client.get('/estaduais/DF')
+    feriado = response.get_json()[0]
+    assert feriado['id'] == 161
 
 def test_nacional_com_ano_retorna_sexta_santa(client):
     response = client.get('/nacional?ano=2025')
